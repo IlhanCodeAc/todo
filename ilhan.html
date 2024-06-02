@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>todos</h1></header>
+    <div class="todoapp">
+      <div class="header">
+        <form>
+          <i class="fa-solid fa-chevron-down"></i>
+          <input
+            class="new-todo"
+            placeholder="What needs to be done?"
+            value=""
+          />
+        </form>
+      </div>
+      <div class="content"></div>
+      <div class="footer">
+        <div class="left">
+          <span></span>
+          <p>items left</p>
+        </div>
+        <div class="mid">
+          <ul>
+            <li id="first">All</li>
+            <li>Active</li>
+            <li>Completed</li>
+          </ul>
+        </div>
+        <div class="right"><p>Clear completed</p></div>
+      </div>
+    </div>
+  </body>
+</html>
