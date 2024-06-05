@@ -24,12 +24,19 @@ function createAnewRow(event) {
         createCard(text);
         input.value = '';
         const cards = JSON.parse(localStorage.getItem('cards')) || [];
+        
         cards.push(text);
         localStorage.setItem('cards', JSON.stringify(cards));
+        window.location.reload()
     }
 }
+function updateCardCount() {
+    const cards = JSON.parse(localStorage.getItem('cards')) || []; 
+    const numberOfElem = document.getElementById('numberOfElem');
+    numberOfElem.textContent = cards.length; 
+}
 
-form.addEventListener('submit', createAnewRow);
-
+updateCardCount();
 displayData();
 
+form.addEventListener('submit', createAnewRow);

@@ -124,3 +124,7 @@ form {
   outline: none;
   font-size: 20px;
 }
+.left{
+  display: flex;
+  gap: 2px;
+}
