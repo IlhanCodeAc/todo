@@ -58,6 +58,21 @@ function completed() {
     });
 }
 
+function checkAll(){
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        if (!card.classList.contains('checked')) {
+            const checkbox = card.querySelector('.checkbox');
+            const Img = document.createElement('img');
+            Img.src = './assets/svgs/check-solid.svg';
+            checkbox.appendChild(Img);
+            card.classList.add('checked');
+        }
+    });
+    updateElementCount();
+}
+
+down.addEventListener('click',checkAll);
 
 function allcheck(){
     const cards = document.querySelectorAll('.card');
