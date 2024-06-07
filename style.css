@@ -123,8 +123,30 @@ form {
   width: 100%;
   outline: none;
   font-size: 20px;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
 }
 .left{
   display: flex;
   gap: 2px;
+}
+.checkbox{
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(0, 0, 0);
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  border-radius: 50%;
+}
+.checkbox img{
+  width: 20px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.checked{
+  color: rgba(177, 175, 175, 0.897);
+  text-decoration: line-through;
 }
